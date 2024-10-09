@@ -2,7 +2,7 @@ import { Link } from 'react-scroll';
 function Header() {
   return (
     <header
-      className="flex items-center justify-center h-16"
+      className="fixed top-0 left-0 z-50 flex items-center justify-center w-full h-16 bg-white shadow-md"
     >
       <nav>
         <ul className="flex space-x-8">
@@ -12,7 +12,7 @@ function Header() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="about-site" smooth={true} duration={500} className="cursor-pointer">
+            <Link to="profile" smooth={true} duration={500} className="cursor-pointer">
               私の経歴について
             </Link>
           </li>
