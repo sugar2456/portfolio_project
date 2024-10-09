@@ -1,6 +1,6 @@
 function AboutSite() {
   return (
-    <section id="about-site" className="flex items-center justify-center h-screen bg-gray-200">
+    <section id="about-site" className="flex items-center justify-center h-screen bg-gray-100">
       <div className="text-center">
         <h1 className="mb-10 text-6xl font-bold">このWebサイトについて</h1>
         <p className="leading-relaxed">このWebサイトは私の職務経歴に関するサイトになります</p>
