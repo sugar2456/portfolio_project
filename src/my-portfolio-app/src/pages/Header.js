@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll';
 function Header() {
   return (
     <header
@@ -5,20 +6,30 @@ function Header() {
     >
       <nav>
         <ul className="flex space-x-8">
-          <li>
-            <a href="/about_site" className="font-bold">このサイトについて</a>
+          <li className="nav-item">
+            <Link to="about-site" smooth={true} duration={500} className="cursor-pointer">
+              このサイトについて
+            </Link>
           </li>
-          <li>
-            <a href="/about_my_career" className="font-bold">私の経歴について</a>
+          <li className="nav-item">
+            <Link to="about-site" smooth={true} duration={500} className="cursor-pointer">
+              私の経歴について
+            </Link>
           </li>
-          <li>
-            <a href="/about_my_skills" className="font-bold">スキルについて</a>
+          <li className="nav-item">
+            <Link to="about-site" smooth={true} duration={500} className="cursor-pointer">
+              スキルについて
+            </Link>
           </li>
-          <li>
-            <a href="/abount_thinking_for_job" className="font-bold">仕事についての考え</a>
+          <li className="nav-item">
+            <Link to="about-site" smooth={true} duration={500} className="cursor-pointer">
+              仕事についての考え
+            </Link>
           </li>
-          <li>
-            <a href="/portfolio" className="font-bold">ポートフォリオの紹介</a>
+          <li className="nav-item">
+            <Link to="about-site" smooth={true} duration={500} className="cursor-pointer">
+              ポートフォリオの紹介
+            </Link>
           </li>
         </ul>
       </nav>

@@ -17,9 +17,13 @@ code {
 }
 
 .text-outline {
-  text-shadow: 
-    -1px -1px 0 #b6b6b6,  
+  text-shadow:
+    -1px -1px 0 #b6b6b6,
     1px -1px 0 #b6b6b6,
     -1px 1px 0 #b6b6b6,
     1px 1px 0 #b6b6b6;
+}
+
+.nav-item {
+  @apply font-bold transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110;
 }
