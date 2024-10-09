@@ -59,6 +59,24 @@ function Skill() {
         ],
     };
 
+    const platformSkills = [
+        { name: 'フロントエンド', month: 50 },
+        { name: 'バックエンド', month: 18 },
+        { name: 'モバイル', month: 12 },
+        { name: 'インフラ', month: 2 },
+    ];
+
+    const platformData = {
+        labels: platformSkills.map(skill => skill.name),
+        datasets: [
+            {
+                data: platformSkills.map(skill => skill.month),
+                backgroundColor: ['#36A2EB', '#FFCE56', '#FF6384', '#4BC0C0'],
+                hoverBackgroundColor: ['#36A2EB', '#FFCE56', '#FF6384', '#4BC0C0'],
+            },
+        ],
+    };
+
     return (
         <section id="skill" className="h-screen p-8 bg-gray-200">
             <h1 className="pt-16 pb-6 text-6xl font-bold text-center">スキルについて</h1>
@@ -66,6 +84,7 @@ function Skill() {
                 <SkillCard title="言語" skills={langSkills} data={langData} />
                 <SkillCard title="フレームワーク" skills={framworkSkills} data={framworkData} />
                 <SkillCard title="開発フェーズ" skills={phaseSkills} data={phaseData} />
+                <SkillCard title="プラットフォーム" skills={platformSkills} data={platformData} />
             </div>
         </section>
     );
