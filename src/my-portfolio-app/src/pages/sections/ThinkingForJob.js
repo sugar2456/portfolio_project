@@ -14,7 +14,7 @@ function ThinkingForJob() {
     }
   }, [inView]);
   return (
-    <section id="thinkingForJob" className="flex items-center justify-center h-screen bg-green-200">
+    <section id="thinkingForJob" className="flex items-center justify-center h-screen bg-red-100">
       <div ref={ref} className={`text-center transition duration-[1000ms] ${isVisible ? 'transform translate-y-0 opacity-100' : 'transform translate-y-56 opacity-0'}`}>
         <h1 className="mb-10 text-6xl font-bold">仕事についての考え</h1>
         <p className="leading-relaxed">本当に価値あるプロダクトを世の中にリリースしたいです。</p>
