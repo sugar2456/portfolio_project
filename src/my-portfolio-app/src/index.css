@@ -18,10 +18,10 @@ code {
 
 .text-outline {
   text-shadow:
-    -1px -1px 0 #b6b6b6,
-    1px -1px 0 #b6b6b6,
-    -1px 1px 0 #b6b6b6,
-    1px 1px 0 #b6b6b6;
+    -1px -1px 0 #8a7070,
+    1px -1px 0 #8a7070,
+    -1px 1px 0 #8a7070,
+    1px 1px 0 #8a7070;
 }
 
 .nav-item {
