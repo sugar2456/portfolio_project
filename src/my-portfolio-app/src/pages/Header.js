@@ -22,7 +22,7 @@ function Header() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="about-site" smooth={true} duration={500} className="cursor-pointer">
+            <Link to="thinkingForJob" smooth={true} duration={500} className="cursor-pointer">
               仕事についての考え
             </Link>
           </li>
