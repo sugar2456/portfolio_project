@@ -17,7 +17,7 @@ function Header() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="about-site" smooth={true} duration={500} className="cursor-pointer">
+            <Link to="skill" smooth={true} duration={500} className="cursor-pointer">
               スキルについて
             </Link>
           </li>
