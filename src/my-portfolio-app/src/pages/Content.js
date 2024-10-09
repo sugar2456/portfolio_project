@@ -1,13 +1,15 @@
 import AboutSite from "./sections/AboutSite";
 import Banner from "./sections/Banner";
 import Profile from "./sections/Profile";
+import Skill from "./sections/Skill";
 function Content() {
   return (
-    <div>
+    <main>
       <Banner />
       <AboutSite />
       <Profile />
-    </div>
+      <Skill />
+    </main>
   );
 }
 
