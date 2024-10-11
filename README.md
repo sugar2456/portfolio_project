@@ -26,6 +26,12 @@ npm install
 npm start
 ```
 
+# github pagesにデプロイ
+
+```
+npm run deploy
+```
+
 # トラブルシューティング
 
 コンテナの中でファイルを作成すると
