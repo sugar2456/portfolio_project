@@ -32,6 +32,9 @@ npm start
 npm run deploy
 ```
 
+サイトURL
+https://sugar2456.github.io/portfolio_project/
+
 # トラブルシューティング
 
 コンテナの中でファイルを作成すると
