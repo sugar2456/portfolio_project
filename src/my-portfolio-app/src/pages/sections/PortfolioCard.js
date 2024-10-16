@@ -15,7 +15,7 @@ function PortfolioCard({ title, image, description, tooltip }) {
         }
     }, [inView]);
     return (
-        <div ref={ref} className={`w-1/5 p-4 transition duration-[1000ms] ${isVisible ? 'transform translate-y-0 opacity-100' : 'transform translate-y-56 opacity-0'}`}>
+        <div ref={ref} className={`w-90 p-4 transition duration-[1000ms] ${isVisible ? 'transform translate-y-0 opacity-100' : 'transform translate-y-56 opacity-0'}`}>
             <div className="p-6 bg-white rounded-lg shadow-md">
                 <h3 className="mb-2 text-xl font-bold">{title}</h3>
                 <div className="relative group">
