@@ -1,3 +1,4 @@
+import Blank from "./sections/Blank";
 import AboutSite from "./sections/AboutSite";
 import Banner from "./sections/Banner";
 import Profile from "./sections/Profile";
@@ -7,6 +8,7 @@ import Portfolio from "./sections/Portfolio";
 function Content() {
   return (
     <main>
+      <Blank />
       <Banner />
       <AboutSite />
       <Profile />

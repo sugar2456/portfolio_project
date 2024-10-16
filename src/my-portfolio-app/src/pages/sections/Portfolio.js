@@ -2,8 +2,8 @@ import PortfolioCard from "./PortfolioCard";
 function Portfolio() {
     return (
         <section id="portfolio" className="h-screen p-8 bg-yellow-100">
-            <h1 className="pt-16 pb-6 text-6xl font-bold text-center">ポートフォリオの紹介</h1>
-            <div className="flex items-center justify-center space-x-4">
+            <h1 className="mb-10 text-3xl font-bold text-center md:text-6xl">ポートフォリオの紹介</h1>
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
                 <PortfolioCard
                     title="バイタルマーカー解析アプリ"
                     image='images/vital_photo.png'
