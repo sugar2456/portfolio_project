@@ -17,7 +17,7 @@ function PortfolioCard({ title, image, description, tooltip }) {
 
     return (
         <a
-            href="https://github.com/sugar2456/vital_data_viewer_app/actions"
+            href="https://github.com/sugar2456/vital_data_viewer_app/wiki"
             target="_blank"
             rel="noopener noreferrer"
             ref={ref}
