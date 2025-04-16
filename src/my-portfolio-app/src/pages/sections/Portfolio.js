@@ -8,7 +8,7 @@ function Portfolio() {
                     title="バイタルマーカー解析アプリ"
                     image='images/vital_photo.png'
                     description="ウェアラブルデバイスから生体情報を取得して、グラフ化したり解析するアプリ"
-                    tooltip="github actionsで最新のビルドをデプロイされています"
+                    tooltip="githubにて配布中"
                 />
             </div>
         </section>
