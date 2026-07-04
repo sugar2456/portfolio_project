@@ -3,7 +3,15 @@ import { useInView } from 'react-intersection-observer';
 import { Doughnut } from 'react-chartjs-2';
 import 'chart.js/auto';
 const options = {
+    maintainAspectRatio: false,
     plugins: {
+        legend: {
+            position: 'bottom',
+            labels: {
+                boxWidth: 10,
+                padding: 14,
+            },
+        },
         tooltip: {
             callbacks: {
                 label: function (context) {
@@ -30,29 +38,29 @@ function SkillCard({ title, skills, data }) {
         }
       }, [inView]);
     return (
-        <div ref={ref} className={`w-90 p-4 transition duration-[1000ms] ${isVisible ? 'transform translate-y-0 opacity-100' : 'transform translate-y-56 opacity-0'}`}>
-            <div className="p-6 bg-white rounded-lg shadow-md">
-                <h3 className="mb-2 text-xl font-bold">{title}</h3>
-                <div className="text-center">
-                    <div className="overflow-x-auto">
-                        <table className="min-w-full bg-white h-60">
+        <div ref={ref} className={`transition duration-[1000ms] ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'}`}>
+            <div className="flex h-full flex-col rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
+                <h3 className="mb-4 text-lg font-bold text-slate-950">{title}</h3>
+                <div className="flex flex-1 flex-col text-center">
+                    <div className="overflow-x-auto rounded-lg border border-slate-100">
+                        <table className="min-w-full bg-white text-sm">
                             <thead>
-                                <tr>
-                                    <th className="px-4 py-2 border-b">スキル</th>
-                                    <th className="px-4 py-2 border-b">月（ヶ月）</th>
+                                <tr className="bg-slate-50 text-slate-500">
+                                    <th className="px-4 py-3 text-left font-bold">スキル</th>
+                                    <th className="px-4 py-3 text-right font-bold">月</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {skills.map((skill, index) => (
-                                    <tr key={index}>
-                                        <td className="px-4 py-2 border-b">{skill.name}</td>
-                                        <td className="px-4 py-2 border-b">{skill.month}</td>
+                                    <tr key={index} className="border-t border-slate-100">
+                                        <td className="px-4 py-3 text-left text-slate-700">{skill.name}</td>
+                                        <td className="px-4 py-3 text-right font-semibold text-slate-950">{skill.month}</td>
                                     </tr>
                                 ))}
                             </tbody>
                         </table>
                     </div>
-                    <div className="mt-10">
+                    <div className="mt-6 h-56 min-h-56">
                         <Doughnut data={data} options={options} />
                     </div>
                 </div>

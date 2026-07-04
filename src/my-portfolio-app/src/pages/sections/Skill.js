@@ -78,13 +78,18 @@ function Skill() {
     };
 
     return (
-        <section id="skill" className="h-auto p-8 bg-blue-200">
-            <h1 className="pt-8 pb-6 text-3xl font-bold text-center sm:pt-16 sm:text-6xl">経験スキルについて</h1>
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
+        <section id="skill" className="bg-slate-100">
+            <div className="section-shell">
+                <div className="mb-10 max-w-3xl">
+                    <p className="section-kicker">Skills</p>
+                    <h1 className="section-title">経験スキルについて</h1>
+                </div>
+                <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">
                 <SkillCard title="言語" skills={langSkills} data={langData} />
                 <SkillCard title="フレームワーク" skills={framworkSkills} data={framworkData} />
                 <SkillCard title="開発フェーズ" skills={phaseSkills} data={phaseData} />
                 <SkillCard title="プラットフォーム" skills={platformSkills} data={platformData} />
+                </div>
             </div>
         </section>
     );
