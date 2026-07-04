@@ -21,19 +21,21 @@ function PortfolioCard({ title, image, description, tooltip }) {
             target="_blank"
             rel="noopener noreferrer"
             ref={ref}
-            className={`block w-90 p-4 transition duration-[1000ms] cursor-pointer ${
-                isVisible ? 'transform translate-y-0 opacity-100' : 'transform translate-y-56 opacity-0'
+            className={`group block transition duration-[1000ms] ${
+                isVisible ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'
             }`}
         >
-            <div className="p-6 bg-white rounded-lg shadow-md">
-                <h3 className="mb-2 text-xl font-bold">{title}</h3>
-                <div className="relative group">
-                    <img src={image} alt={title} className="object-cover w-full h-60" />
-                    <div className="absolute bottom-0 left-0 hidden w-full p-2 text-sm text-white bg-black bg-opacity-75 group-hover:block">
+            <div className="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm transition duration-300 group-hover:-translate-y-1 group-hover:shadow-xl">
+                <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
+                    <img src={image} alt={title} className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+                    <div className="absolute bottom-3 left-3 rounded-full bg-slate-950/85 px-3 py-1 text-xs font-bold text-white opacity-0 transition group-hover:opacity-100">
                         {tooltip}
                     </div>
                 </div>
-                <p className="text-gray-700">{description}</p>
+                <div className="p-5">
+                    <h3 className="mb-3 text-xl font-bold text-slate-950">{title}</h3>
+                    <p className="text-sm leading-7 text-slate-600">{description}</p>
+                </div>
             </div>
         </a>
     );

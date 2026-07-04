@@ -2,11 +2,13 @@ import { FaGithub } from 'react-icons/fa';
 
 function Footer() {
   return (
-    <footer className="flex items-center justify-center w-full h-16 bg-white">
-      <p className="mr-4">© 2024 ogawa satoru</p>
-      <a href="https://github.com/sugar2456" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-black">
+    <footer className="border-t border-slate-200 bg-slate-50">
+      <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-8 text-sm text-slate-500 md:px-8">
+      <p>© 2024 ogawa satoru</p>
+      <a href="https://github.com/sugar2456" target="_blank" rel="noopener noreferrer" className="rounded-full p-2 text-slate-700 transition hover:bg-slate-900 hover:text-white" aria-label="GitHub">
         <FaGithub size={24} />
       </a>
+      </div>
     </footer>
   );
 }

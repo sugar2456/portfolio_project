@@ -1,8 +1,12 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+jest.mock('react-chartjs-2', () => ({
+  Doughnut: () => <div data-testid="skill-chart" />,
+}));
+
+test('renders portfolio site heading', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  expect(screen.getByText(/OGAWA SATORUの/i)).toBeInTheDocument();
+  expect(screen.getByRole('heading', { name: /経験スキルについて/i })).toBeInTheDocument();
 });

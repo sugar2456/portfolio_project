@@ -3,7 +3,7 @@ import Content from "./Content";
 import Footer from "./Footer";
 function Home() {
     return (
-        <div>
+        <div className="min-h-screen bg-slate-50">
             <Header />
             <Content />
             <Footer />

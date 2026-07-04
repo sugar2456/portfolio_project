@@ -4,6 +4,8 @@
 
 body {
   margin: 0;
+  color: #111827;
+  background: #f8fafc;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -17,17 +19,33 @@ code {
 }
 
 .text-outline {
-  text-shadow:
-    -1px -1px 0 #8a7070,
-    1px -1px 0 #8a7070,
-    -1px 1px 0 #8a7070,
-    1px 1px 0 #8a7070;
+  text-shadow: 0 18px 60px rgba(0, 0, 0, 0.5);
 }
 
 .nav-item {
-  @apply p-2 font-bold transition duration-500 ease-in-out transform md:px-0 md:py-6 hover:-translate-y-1 hover:scale-110;
+  @apply shrink-0;
 }
 
 .nav-item-text-class {
-  @apply text-xs cursor-pointer md:text-base;
+  @apply block rounded-full px-3 py-2 text-xs font-semibold text-slate-600 transition duration-200 hover:bg-slate-900 hover:text-white md:text-sm;
+}
+
+.section-shell {
+  @apply mx-auto w-full max-w-6xl px-5 py-20 md:px-8 md:py-28;
+}
+
+.section-kicker {
+  @apply mb-3 text-xs font-bold uppercase tracking-[0.22em] text-teal-600;
+}
+
+.section-title {
+  @apply text-3xl font-bold tracking-normal text-slate-950 md:text-5xl;
+}
+
+.section-copy {
+  @apply mt-6 space-y-3 text-sm leading-7 text-slate-600 md:text-base md:leading-8;
+}
+
+.content-card {
+  @apply rounded-lg border border-slate-200 bg-white p-6 shadow-sm md:p-8;
 }
